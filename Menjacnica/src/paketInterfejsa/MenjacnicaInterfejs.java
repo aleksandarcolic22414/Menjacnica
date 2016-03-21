@@ -1,7 +1,5 @@
 package paketInterfejsa;
 
-import java.util.GregorianCalendar;
-
 import kurs.Kurs;
 
 public interface MenjacnicaInterfejs {

@@ -1,6 +1,5 @@
 package menjacnica;
 
-import java.util.GregorianCalendar;
 import java.util.LinkedList;
 import kurs.Kurs;
 import paketInterfejsa.MenjacnicaInterfejs;
@@ -9,6 +8,10 @@ import valute.Valuta;
 public class Menjacnica implements MenjacnicaInterfejs {
 
 	private LinkedList<Valuta> listaValuta;
+	
+	public Menjacnica() {
+		listaValuta = new LinkedList<>();
+	}
 	@Override
 	public void dodajKursValuteZaOdredjeniDan(String nazivValute,String skraceniNazivValute,Kurs kurs) {
 		Valuta v = new Valuta();
