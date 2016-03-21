@@ -12,19 +12,28 @@ public class Valuta {
 		return nazivValute;
 	}
 	public void setNazivValute(String nazivValute) {
-		this.nazivValute = nazivValute;
+		if(nazivValute == null || nazivValute.isEmpty()){
+			System.out.println("Greska prilikom unosa naziva valute.");
+		}
+		else this.nazivValute = nazivValute;
 	}
 	public String getSkraceniNazivValute() {
 		return skraceniNazivValute;
 	}
 	public void setSkraceniNazivValute(String skraceniNazivValute) {
-		this.skraceniNazivValute = skraceniNazivValute;
+		if(skraceniNazivValute == null || skraceniNazivValute.isEmpty()){
+			System.out.println("Greska prilikom unosa skracenog naziva valute");
+		}
+		else this.skraceniNazivValute = skraceniNazivValute;
 	}
 	public Kurs getKurs() {
 		return kurs;
 	}
 	public void setKurs(Kurs kurs) {
-		this.kurs = kurs;
+		if(kurs == null){
+			System.out.println("Greska prilikom unosa kursa");
+		}
+		else this.kurs = kurs;
 	}
 	@Override
 	public String toString() {
